@@ -1,0 +1,26 @@
+{
+  "name": "@gradientai/nodejs-sdk-typescript-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Preemo-Inc/gradient-sdk-typescript-example.git"
+  },
+  "keywords": [
+    "gradient",
+    "llm",
+    "gradient",
+    "ai",
+    "typescript"
+  ],
+  "author": "gradient.ai developers",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Preemo-Inc/gradient-sdk-typescript-example/issues"
+  },
+  "homepage": "https://github.com/Preemo-Inc/gradient-sdk-typescript-example#readme"
+}
