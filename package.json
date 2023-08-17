@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Preemo-Inc/gradient-sdk-typescript-example/issues"
   },
-  "homepage": "https://github.com/Preemo-Inc/gradient-sdk-typescript-example#readme"
+  "homepage": "https://github.com/Preemo-Inc/gradient-sdk-typescript-example#readme",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
 }
