@@ -4,17 +4,20 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "true"
+    "test": "true",
+    "list": "ts-node -r dotenv/config src/list.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Preemo-Inc/gradient-sdk-typescript-example.git"
   },
   "keywords": [
-    "gradient",
     "llm",
-    "gradient",
+    "gradient.ai",
     "ai",
+    "large language models",
+    "gradient",
+    "machine learning",
     "typescript"
   ],
   "author": "gradient.ai developers",
@@ -24,6 +27,12 @@
   },
   "homepage": "https://github.com/Preemo-Inc/gradient-sdk-typescript-example#readme",
   "devDependencies": {
+    "@types/node": "^20.5.0",
+    "dotenv": "^16.3.1",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@gradientai/nodejs-sdk": "^1.0.0-dev.2"
   }
 }
