@@ -20,6 +20,6 @@ GRADIENT_API_URL=https://api-staging2.gradient.ai/api
 
 ## Example
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](example.gif)
 
 
