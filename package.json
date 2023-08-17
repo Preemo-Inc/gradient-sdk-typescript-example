@@ -11,10 +11,12 @@
     "url": "git+https://github.com/Preemo-Inc/gradient-sdk-typescript-example.git"
   },
   "keywords": [
-    "gradient",
     "llm",
-    "gradient",
+    "gradient.ai",
     "ai",
+    "large language models",
+    "gradient",
+    "machine learning",
     "typescript"
   ],
   "author": "gradient.ai developers",
@@ -25,5 +27,8 @@
   "homepage": "https://github.com/Preemo-Inc/gradient-sdk-typescript-example#readme",
   "devDependencies": {
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@gradientai/nodejs-sdk": "^1.0.0-dev.2"
   }
 }
