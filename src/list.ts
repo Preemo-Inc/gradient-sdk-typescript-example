@@ -7,7 +7,6 @@ async function main() {
 
   const modelsApi = new ModelsApi(configuration);
   const models = await modelsApi.listModels({
-    onlyBase: false,
     xGradientWorkspaceId: process.env.GRADIENT_WORKSPACE_ID!,
   });
 
