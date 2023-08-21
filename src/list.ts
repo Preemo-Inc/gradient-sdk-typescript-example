@@ -3,13 +3,12 @@ import { Configuration, ModelsApi } from "@gradientai/nodejs-sdk";
 async function main() {
   const configuration = new Configuration({
     accessToken: process.env.GRADIENT_ACCESS_TOKEN,
-    basePath: process.env.GRADIENT_API_URL,
   });
 
   const modelsApi = new ModelsApi(configuration);
   const models = await modelsApi.listModels({
     onlyBase: false,
-    xPreemoWorkspaceId: process.env.GRADIENT_WORKSPACE_ID!,
+    xGradientWorkspaceId: process.env.GRADIENT_WORKSPACE_ID!,
   });
 
   if (models.status !== 200) {
@@ -19,4 +18,9 @@ async function main() {
   console.log(models.data);
 }
 
-main().catch(console.error).then(console.log);
+main()
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  })
+  .finally(() => process.exit());
