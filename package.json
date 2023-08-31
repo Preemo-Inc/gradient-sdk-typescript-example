@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "true",
-    "list": "ts-node -r dotenv/config src/list.ts"
+    "whole-flow": "ts-node -r dotenv/config src/wholeFlow.ts"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@gradientai/nodejs-sdk": "^1.0.0-dev.4"
+    "@gradientai/nodejs-sdk": "^1.0.0"
   }
 }

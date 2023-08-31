@@ -14,8 +14,8 @@ GRADIENT_WORKSPACE_ID=...
 ## Usage
 
 1. Clone this repo
-2. Run `npm install`
-3. Run `npm run list`
+2. Run `yarn install`
+3. Run `yarn whole-flow`
 
 ## Example
 
