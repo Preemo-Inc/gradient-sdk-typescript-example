@@ -130,3 +130,7 @@ dist
 .pnp.*
 
 .tool-versions
+
+# Lock files - this is an example project
+package-lock.json
+yarn.lock
