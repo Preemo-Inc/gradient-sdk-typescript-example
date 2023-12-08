@@ -4,10 +4,11 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "true",
-    ,
+    "embeddings": "ts-node -r dotenv/config src/embeddings.ts",
     "fine-tune": "ts-node -r dotenv/config src/fineTune.ts",
-    "embeddings": "ts-node -r dotenv/config src/embeddings.ts"
+    "guidance": "ts-node -r dotenv/config src/guidance.ts",
+    ,
+    "test": "true"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@gradientai/nodejs-sdk": "^1.1.0"
+    "@gradientai/nodejs-sdk": "^1.2.0"
   }
 }
