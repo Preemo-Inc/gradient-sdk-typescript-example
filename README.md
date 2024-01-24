@@ -19,6 +19,7 @@ GRADIENT_WORKSPACE_ID=...
    - `yarn fine-tune`
    - `yarn embeddings`
    - `yarn guidance`
+   - `yarn blocks`
 
 ## Example
 

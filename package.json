@@ -7,6 +7,7 @@
     "embeddings": "ts-node -r dotenv/config src/embeddings.ts",
     "fine-tune": "ts-node -r dotenv/config src/fineTune.ts",
     "guidance": "ts-node -r dotenv/config src/guidance.ts",
+    "blocks": "ts-node -r dotenv/config src/blocks.ts",
     ,
     "test": "true"
   },
