@@ -91,7 +91,7 @@ const runSummarizeExample = async ({
 
   console.log("Summarizing document...");
   const resultWithLength = await gradient.summarize({
-    document: document,
+    document,
     length: "long",
   });
   console.log(`Summary: ${resultWithLength.summary}`);
@@ -127,7 +127,7 @@ const runAnalyzeSentimentExample = async ({
 
   console.log("Analyzing sentiment...");
   const { sentiment } = await gradient.analyzeSentiment({
-    document: document,
+    document,
     examples,
   });
   console.log(`Sentiment: ${sentiment}`);
@@ -192,10 +192,27 @@ const runExtractExample = async ({
 
   console.log("Extracting entity from document...");
   const { entity } = await gradient.extract({
-    document: document,
+    document,
     schema,
   });
   console.log(`Entity: ${JSON.stringify(entity, null, 2)}`);
+  console.log("================\n");
+};
+
+const runExtractPdfExample = async ({
+  gradient,
+}: {
+  gradient: Gradient;
+}): Promise<void> => {
+  const filepath = "resources/Lorem_Ipsum.pdf";
+  console.log("==== PDF Extraction ====");
+  console.log(`Filepath: ${filepath}\n`);
+
+  console.log("Extracting content from the PDF...");
+  const { pages, text } = await gradient.extractPdf({ filepath });
+
+  console.log(`Text: ${text}`);
+  console.log(`Pages: ${JSON.stringify(pages, null, 2)}`);
   console.log("================\n");
 };
 
@@ -207,6 +224,7 @@ const main = async () => {
   await runAnalyzeSentimentExample({ gradient });
   await runPersonalizeExample({ gradient });
   await runExtractExample({ gradient });
+  await runExtractPdfExample({ gradient });
 };
 
 main()
