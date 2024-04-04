@@ -16,10 +16,11 @@ GRADIENT_WORKSPACE_ID=...
 1. Clone this repo
 2. Run `yarn install`
 3. Run any of the following:
-   - `yarn fine-tune`
-   - `yarn embeddings`
-   - `yarn guidance`
    - `yarn blocks`
+   - `yarn embeddings`
+   - `yarn fine-tune`
+   - `yarn guidance`
+   - `yarn rag`
 
 ## Example
 

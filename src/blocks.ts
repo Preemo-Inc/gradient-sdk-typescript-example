@@ -216,6 +216,22 @@ const runExtractPdfExample = async ({
   console.log("================\n");
 };
 
+const runTranscribeExample = async ({
+  gradient,
+}: {
+  gradient: Gradient;
+}): Promise<void> => {
+  const filepath = "resources/Life_Kit.mp3";
+  console.log("==== Audio Transcription ====");
+  console.log(`Filepath: ${filepath}\n`);
+
+  console.log("Transcribing audio from the file...");
+  const { text } = await gradient.transcribeAudio({ filepath });
+
+  console.log(`Text: ${text}`);
+  console.log("================\n");
+};
+
 const main = async () => {
   const gradient = new Gradient({});
 
@@ -225,6 +241,7 @@ const main = async () => {
   await runPersonalizeExample({ gradient });
   await runExtractExample({ gradient });
   await runExtractPdfExample({ gradient });
+  await runTranscribeExample({ gradient });
 };
 
 main()
