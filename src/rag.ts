@@ -8,12 +8,14 @@ const main = async () => {
     name: "My RAG Collection",
     slug: "bge-large",
   });
-  console.log(`Created RAG Collection with id: ${ragCollection.id}`);
+  console.log(`Created RAG collection with id: ${ragCollection.id}`);
 
   await ragCollection.addFiles({
     filepaths: ["resources/Life_Kit.mp3"],
   });
-  console.log(`Added file to RAG Collection with id: ${ragCollection.id}`);
+  console.log(
+    `RAG collection files: ${JSON.stringify(ragCollection.files, null, 2)}`
+  );
 };
 
 main()
