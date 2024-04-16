@@ -16,6 +16,8 @@ const main = async () => {
   console.log(
     `RAG collection files: ${JSON.stringify(ragCollection.files, null, 2)}`
   );
+
+  await ragCollection.delete({});
 };
 
 main()
