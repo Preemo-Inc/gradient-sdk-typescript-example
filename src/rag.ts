@@ -6,9 +6,16 @@ const main = async () => {
   const ragCollection = await gradient.createRagCollection({
     filepaths: ["resources/Lorem_Ipsum.pdf"],
     name: "My RAG Collection",
+    parser: {
+      chunkSize: 1024,
+      chunkOverlap: 20,
+      parserType: "simpleNodeParser",
+    },
     slug: "bge-large",
   });
   console.log(`Created RAG collection with id: ${ragCollection.id}`);
+
+  console.log(`RAG collection: ${JSON.stringify(ragCollection, null, 2)}`);
 
   await ragCollection.addFiles({
     filepaths: ["resources/Life_Kit.mp3"],
