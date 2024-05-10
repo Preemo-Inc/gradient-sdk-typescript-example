@@ -8,7 +8,6 @@
     "embeddings": "ts-node -r dotenv/config src/embeddings.ts",
     "fine-tune": "ts-node -r dotenv/config src/fineTune.ts",
     "guidance": "ts-node -r dotenv/config src/guidance.ts",
-    ,
     "rag": "ts-node -r dotenv/config src/rag.ts",
     "test": "true"
   },
